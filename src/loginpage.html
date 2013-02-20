@@ -4,7 +4,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Login -- Bazinga</title>
-         <script src="LoginPage.js"> </script>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="LoginPage.js"> </script>
     	    	
        </head>
     <body>
@@ -26,24 +27,28 @@
     				<form name="register" action="index_submit" method="get" accept-charset="utf-8" onsubmit="return validateForm()">  
 				        <label for="usermail">Email</label>
 				        <input type="email" name="usermail" placeholder="yourname@email.com" required>  
+				        
 				        <br>
 				        <label for="password">Password</label>
 				        <input type="password" name="password" placeholder="password" required>  
+				        
 				        <br>
 				        <label for="Confirm password">Confirm Password</label>  
 				        <input type="password" name="password" placeholder="password" required>
+				        
 				        <br> 
 				        <label for="Nama">Nama Lengkap</label>
 				        <input type="nama" name="nama" placeholder="Nama anda" required> 
+				        
 				        <br>
 				        <label for="Jenis Kelamin">Jenis kelamin :</label>
-				        <br>
 				        <input type="radio" name="sex" value="male">Pria
+				        <input type="radio" name="sex" value="female">Wanita 
+				        
 				        <br>
-						<input type="radio" name="sex" value="female">Wanita 
-				        <br>
-				        <label for="Tanggal lahir">Tanggal Lahir :</label><br />
+				        <label for="Tanggal lahir">Tanggal Lahir :</label>
 				        <input type="date">
+						
 						<br>
 				        <input type="submit" value="register">  
     				</form>  

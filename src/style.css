@@ -1,10 +1,42 @@
+header{
+	margin: 0 auto 0 auto;
+	width: 900px;
+	background-color: #f0f0f0;
+}
+
+footer{
+	clear: both;
+	margin: 0 auto 0 auto;
+	width: 900px;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+body{
+	margin: 0 auto 0 auto;
+	width: 900px;
+	font-family: arial;
+}
+
+h1{
+	font-family: arial;
+	margin: 0px;
+}
+
+label{
+	display: inline-block;
+	width: 200px;
+}
+
+a {
+	color: #636363;
+}
 
 .namatugas {
     font-size: 30px;
     font-weight: bold;
     color: darkslategrey;
 }
-
 
 .commenttugas {
 
@@ -14,6 +46,21 @@
     font-weight: bold;
 }
 
-.commenttugas {
 
+.body {
+	float: left;
+	width: 100%;
+}
+
+.contents{
+	width: 700px;
+	float: left;
+	padding: 10px;
+}
+
+.catagories {
+	float: left;
+	width: 158px;
+	border-right: dashed 2px;
+	padding: 10px
 }
