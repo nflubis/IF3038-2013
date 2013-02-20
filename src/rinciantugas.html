@@ -7,40 +7,58 @@ and open the template in the editor.
     <head>
         <link rel="stylesheet" href="style.css" type="text/css"/>
 
-        <title>Task Details -- Bazinga</title>
+        <title>Task Details -- CanDo</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>Task Details</h1>
-        <div class="namatugas">Beli Minyak Goreng</div>
-        <br>
-        <div class="atributtugas">Deadline</div>
-        <br>
-        <div> <div class="atributtugas">Assignee</div>
-            <ul>
-                <li>Assignee 1</li>
-                <li>Assignee 2</li>
-                <li>Assignee n</li>
-            </ul>
+        <header><h1>CanDo</h1></header>
+        <div class="body">
+            <div class="contents">
+                <h3>Task Details</h3>
+                <div class="namatugas">Beli Minyak Goreng</div>
+                <br>
+                <div class="atributtugas">Deadline</div>
+                <br>
+                <div> <div class="atributtugas">Assignee</div>
+                    <ul>
+                        <li>Assignee 1</li>
+                        <li>Assignee 2</li>
+                        <li>Assignee n</li>
+                    </ul>
+                </div>
+                <div><div class="atributtugas">Tags</div> dapur, makanan, penting</div>
+                <br>
+                <div class="atributtugas">Comments</div>
+                <p class="commenttugas">Wah seru banget nih tugasnya! huhuhu ngiri sama assigneenya</p>
+                <p class="commenttugas">Gila! ayo beli minyak goreng merk terbaik!</p>
+                <div class="atributtugas">Say something about this task:</div>
+                <div>
+                    <textarea name="comments" rows="3" maxlength="200" cols="60"></textarea>
+                    <br>
+                    <input type="submit" value="Comment!" onClick="">
+                </div>
+                <br>
+                <div class="atributtugas">Attachments</div>
+                <!-- Di sini taro attchmentnya -->
+                <img src ="images\tes.jpg">
+                <!-- to do: kalo ada file pop-up/download sesuai MIME -->
+                <br><br><br>
+                <input type="submit" value="Edit Task">
+                <!-- to do: kalo button diklik bbrp field jadi editable -->
+            </div>
+            <nav class="categories">
+                <h3>Catagories:</h3>
+                <ul>
+                    <li><a href="#">School</a></li>
+                    <li><a href ="#">Personal</a></li>
+                    <li><a href ="#">Club</a></li>
+                </ul>
+            </nav>
         </div>
-        <div><div class="atributtugas">Tags</div> dapur, makanan, penting</div>
-        <br>
-        <div class="atributtugas">Comments</div>
-        <p class="commenttugas">Wah seru banget nih tugasnya! huhuhu ngiri sama assigneenya</p>
-        <p class="commenttugas">Gila! ayo beli minyak goreng merk terbaik!</p>
-        <div class="atributtugas">Say something about this task:</div>
-        <div>
-            <textarea name="comments" rows="3" maxlength="200" cols="60"></textarea>
+        <footer>
+            CanDo. Yes you can!
             <br>
-            <input type="button" value="Submit Comment" onClick="">
-        </div>
-        <br>
-        <div class="atributtugas">Attachments</div>
-        <!-- Di sini taro attchmentnya -->
-        <img src ="images\tes.jpg">
-        <!-- to do: kalo ada file pop-up/download sesuai MIME -->
-        <br><br><br>
-        <input type="button" value="Edit Task">
-        <!-- to do: kalo button diklik bbrp field jadi editable -->
+            About us
+        </footer>
     </body>
 </html>
