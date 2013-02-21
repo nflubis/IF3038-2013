@@ -9,25 +9,26 @@
     	    	
        </head>
     <body>
-    	<style>
-    	body{
-    		 background-image: url(IF3038-2013/src/images/Background.jpg);
-    	}
-        <header><h1>CanDo</h1></header>
+   
             <div class="body">
-	            <div class="loginform">  
-	    			<form name="login" method="get" accept-charset="utf-8">  
-	    			<form name="login" method="get" accept-charset="utf-8" onsubmit="validation()">  
-			            <label for="usermail">Email</label>
-			            <input type="email" name="usermail" placeholder="yourname@email.com" required>  
-			            <br>
-			            <label for="password">Password</label>
-			            <input type="password" name="password" placeholder="password" required>  
-			            <br>
-			            <input type="submit" value="Login"> 
-	    			</form>  
+				<div id="logo">
+				</div>
+				
+				<div class="loginstyle"> 
+					<p>
+						<form name="login" method="get" accept-charset="utf-8">  
+						<form name="login" method="get" accept-charset="utf-8" onsubmit="validation()">  
+							<label for="usermail">Email</label>
+							<input type="email" name="usermail" placeholder="yourname@email.com" required>  
+							<br>
+							<label for="password">Password</label>
+							<input type="password" name="password" placeholder="password" required>  
+							<br>
+							<input type="submit" value="Login" STYLE="background-color:FFFFFF"> 
+						</form>  
+					</p>
 	   			</div>  
-				<p>Don't have any ID? Well go home! BAZINGA! You can register</p> 
+				<p>Don't have any ID? You can register here :)</p> 
      			<div class="registerform">  
     				<form name="register"  method="get" accept-charset="utf-8" onsubmit="return validateForm()">  
 				        <label for="usermail">Email</label>
@@ -59,11 +60,11 @@
 				        <input type="submit" value="register" onclick="regsukses()">  
     				</form>  
     			</div> 
+				
+						<div id="footer">
+				CanDo. Yes you can! | 
+				About us
+		</div>
     		</div>
-    		<footer>
-            CanDo. Yes you can!
-            <br>
-            About us
-        	</footer>	 
     </body>
 </html>
