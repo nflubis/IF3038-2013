@@ -15,50 +15,37 @@ function validation (form) {
  }
 
 
-function regsukses() {
-	alert("Registrasi Berhasil. Namun mohon maaf situs belum mampu menyimpan data anda");
-} 
+/*function regsukses() {
+	alert("Registrasi Berhasil");
+} */
 
- function formValidation(form)
+/* function formValidation(form)
 {
 	var passid = form.password.value;
 	var conf = form.confpassword.value;
 	var uname = form.nama.value;
 	var uemail = form.usermail.value;
-	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-	var letters = /^[A-Za-z]+$/;
+	 
+	 if(ValidateEmail(uemail))
 	
-	 if((uemail.value.match(mailformat)))
 		{
-			if(passid_len != 0)
+			if(passid_validation(passid))
 				{
-					if((passid == conf ))
+					if(conf_validation(passid,conf))
 						{
-							if((uname.value.match(letters)))
+							if(allLetter(uname))
 								{
-		 							alert('Form Succesfully Submitted');
+		 							
 								}
-							else {
-									alert ("salah");
-								}
-							}
-						else {
-									alert ("salah");
-							}
-						}
-						else {
-									alert ("salah");
-							} 
+						} 
 				}
-		 
+		} 
 								
-	else {
-		alert ("salah");
-	}
-} 
+		return false;
+} */
 
-/*
-	function passid_validation()
+
+	function passid_validation(passid)
 	{
 		var passid = form.password.value;
 		var passid_len = passid.length;
@@ -71,20 +58,20 @@ function regsukses() {
 		return true;
 	}
 
-
-function conf_validation()
+/*
+function conf_validation(passid,conf)
 	{
 		//var passid_len = passid.value.length;
 		if (passid != conf )
 		{
-			alert("Password not match !");
+			alert("Password should not be empty !");
 			passid.focus();
 			return false;
 		}
 		return true;
 	}
 
-	function allLetter()
+	function allLetter(uname)
 	{ 
 		var letters = /^[A-Za-z]+$/;
 		if(uname.value.match(letters))
@@ -104,9 +91,9 @@ function conf_validation()
 	
 
 	
-
+*/
 	
-	function ValidateEmail()
+	/*function ValidateEmail(uemail)
 	{
 		var uemail = form.usermail.value;
 		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
