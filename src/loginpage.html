@@ -13,6 +13,7 @@
             <div class="body">
 	            <div class="loginform">  
 	    			<form name="login" method="get" accept-charset="utf-8">  
+	    			<form name="login" method="get" accept-charset="utf-8" onsubmit="validation()">  
 			            <label for="usermail">Email</label>
 			            <input type="email" name="usermail" placeholder="yourname@email.com" required>  
 			            <br>
@@ -51,6 +52,7 @@
 						
 						<br>
 				        <input type="submit" value="register">  
+				        <input type="submit" value="register" onclick="regsukses()">  
     				</form>  
     			</div> 
     		</div>
