@@ -1,15 +1,16 @@
 /**
  * @author Dimas
  */
-function validation () {
- 	var user = document.getElementById("email").value;
- 	var pass = document.getElementById("password").value;
- 	if ((user == "admin@admin.com") && (pass == "admin")) {
- 		//window.location ='DashboardPage.html';
- 		alert("diani gendut");
+function validation (form) {
+ 	var user = form.usermail.value;
+ 	var pass = form.password.value;
+ 	if ((user == "nunu@syafira.dimas") && (pass == "admin")) {
+ 		window.location.href = "DashboardPage.html";
+ 		alert("."); // Ini jangan diapus, kalau dihapus jadi nggak ngeload ke page baru
  	}
  	else {
- 		window.location='LoginPage.html'	
+ 			
+ 		alert("ID tidak terdaftar");
  	}
  }
 
