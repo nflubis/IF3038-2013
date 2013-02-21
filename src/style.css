@@ -1,22 +1,14 @@
 header{
 	margin: 0 auto 0 auto;
-	width: 900px;
-	background-color: #f0f0f0;
-}
-
-footer{
-	clear: both;
-	margin: 0 auto 0 auto;
-	width: 900px;
-	text-align: center;
-	background-color: #f0f0f0;
+	width: 1024px;
+	background-color: white;
 }
 
 body{
 	margin: 0 auto 0 auto;
 	width: 1024px;
-	font-family: arial;
-	background: url(IF3038-2013/src/images/Background.jpg);
+	font-family: calibri;
+	background: url(images/Background.jpg);
 }
 
 h1{
@@ -63,35 +55,38 @@ a {
 	float: left;
 	width: 158px;
 	border-right: dashed 2px;
-	padding: 10px
+	padding: 10px;
 }
 
-.logo {
-	float : left;
-	padding : 278px;
+#logo { 
+   background: url(images/Logo.png) no-repeat;
+   height : 84px;
+   width : 341px;
+   margin : 60px;
 }
 
-.loginbutton {
-	background: url(IF3038-2013/src/images/LoginBottom.jpg);
-	font-size: 16px;
-	padding : 600px;
+#footer{
+	background : url(images/Bottom.jpg);
+	margin :0 px 600px;
+	width : 1024px;
+	height : 35px;
+	text-align: center;
 }
 
-.loginbutton:hover {
-	background: url(IF3038-2013/src/images/LoginBottomClick.jpg);
-	font-size: 16px;
-	padding : 600px;
+p {
+	margin-left: 500px;
 }
 
-.signbutton {
-	background: url(IF3038-2013/src/images/SignUpBottom.jpg);
-	font-size: 16px;
-	padding : 580px;
+#loginbutton {
+	background : url(images/LoginBottomClick.jpg);	
+	width : 67px;
+	height : 21px;
 }
 
-.signbutton:hover {
-	background: url(IF3038-2013/src/images/SignUpBottomClick.jpg);
-	font-size: 16px;
-	padding : 580px;
+#registerbutton{
+	background : url(images/SignUpBottom.png);	
+	width : 67px;
+	height : 21px;
 }
-
+	
+	
