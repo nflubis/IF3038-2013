@@ -15,37 +15,50 @@ function validation (form) {
  }
 
 
-/*function regsukses() {
-	alert("Registrasi Berhasil");
-} */
+function regsukses() {
+	alert("Registrasi Berhasil. Namun mohon maaf situs belum mampu menyimpan data anda");
+} 
 
-/* function formValidation(form)
+ function formValidation(form)
 {
 	var passid = form.password.value;
 	var conf = form.confpassword.value;
 	var uname = form.nama.value;
 	var uemail = form.usermail.value;
-	 
-	 if(ValidateEmail(uemail))
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	var letters = /^[A-Za-z]+$/;
 	
+	 if((uemail.value.match(mailformat)))
 		{
-			if(passid_validation(passid))
+			if(passid_len != 0)
 				{
-					if(conf_validation(passid,conf))
+					if((passid == conf ))
 						{
-							if(allLetter(uname))
+							if((uname.value.match(letters)))
 								{
-		 							
+		 							alert('Form Succesfully Submitted');
 								}
-						} 
+							else {
+									alert ("salah");
+								}
+							}
+						else {
+									alert ("salah");
+							}
+						}
+						else {
+									alert ("salah");
+							} 
 				}
-		} 
+		 
 								
-		return false;
-} */
+	else {
+		alert ("salah");
+	}
+} 
 
-
-	function passid_validation(passid)
+/*
+	function passid_validation()
 	{
 		var passid = form.password.value;
 		var passid_len = passid.length;
@@ -58,20 +71,20 @@ function validation (form) {
 		return true;
 	}
 
-/*
-function conf_validation(passid,conf)
+
+function conf_validation()
 	{
 		//var passid_len = passid.value.length;
 		if (passid != conf )
 		{
-			alert("Password should not be empty !");
+			alert("Password not match !");
 			passid.focus();
 			return false;
 		}
 		return true;
 	}
 
-	function allLetter(uname)
+	function allLetter()
 	{ 
 		var letters = /^[A-Za-z]+$/;
 		if(uname.value.match(letters))
@@ -91,9 +104,9 @@ function conf_validation(passid,conf)
 	
 
 	
-*/
+
 	
-	/*function ValidateEmail(uemail)
+	function ValidateEmail()
 	{
 		var uemail = form.usermail.value;
 		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
