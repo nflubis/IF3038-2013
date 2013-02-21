@@ -14,7 +14,7 @@ footer{
 
 body{
 	margin: 0 auto 0 auto;
-	width: 900px;
+	width: 1024px;
 	font-family: arial;
 	background: url(IF3038-2013/src/images/Background.jpg);
 }
@@ -65,3 +65,33 @@ a {
 	border-right: dashed 2px;
 	padding: 10px
 }
+
+.logo {
+	float : left;
+	padding : 278px;
+}
+
+.loginbutton {
+	background: url(IF3038-2013/src/images/LoginBottom.jpg);
+	font-size: 16px;
+	padding : 600px;
+}
+
+.loginbutton:hover {
+	background: url(IF3038-2013/src/images/LoginBottomClick.jpg);
+	font-size: 16px;
+	padding : 600px;
+}
+
+.signbutton {
+	background: url(IF3038-2013/src/images/SignUpBottom.jpg);
+	font-size: 16px;
+	padding : 580px;
+}
+
+.signbutton:hover {
+	background: url(IF3038-2013/src/images/SignUpBottomClick.jpg);
+	font-size: 16px;
+	padding : 580px;
+}
+
