@@ -3,34 +3,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Login -- Bazinga</title>
+        <title>Login Bazinga</title>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <script src="LoginPage.js"> </script>
-    	    	
-       </head>
+    </head>
+	<header>
+	</header>
+	
     <body>
-   
             <div class="body">
 				<div id="logo">
 				</div>
-				
-				<div class="loginstyle"> 
-					<p>
-						<form name="login" method="get" accept-charset="utf-8">  
-						<form name="login" method="get" accept-charset="utf-8" onsubmit="validation()">  
+				<div id="loginform">
+						<!-- <form name="login" method="get" accept-charset="utf-8"> -->  
+						<form name="login" method="get" accept-charset="utf-8" onsubmit="validation()">
+						<p>
 							<label for="usermail">Email</label>
-							<input type="email" name="usermail" placeholder="yourname@email.com" required>  
+							<input type="email" name="usermail" placeholder="yourname@email.com" required>
 							<br>
 							<label for="password">Password</label>
 							<input type="password" name="password" placeholder="password" required>  
 							<br>
-							<input type="submit" value="Login" STYLE="background-color:FFFFFF"> 
-						</form>  
-					</p>
-	   			</div>  
+							<input type="submit" value="" id="loginbutton">
+							</p>
+						</form>
+						</div>
 				<p>Don't have any ID? You can register here :)</p> 
      			<div class="registerform">  
-    				<form name="register"  method="get" accept-charset="utf-8" onsubmit="return validateForm()">  
+    				<form name="register"  method="get" accept-charset="utf-8" onsubmit="return validateForm()"> 
+						<p>
 				        <label for="usermail">Email</label>
 				        <input type="email" name="usermail" placeholder="yourname@email.com" required>  
 				        
@@ -56,8 +57,9 @@
 				        <input type="date">
 						
 						<br>
-				        <input type="submit" value="register">  
-				        <input type="submit" value="register" onclick="regsukses()">  
+						
+				        <input type="submit" value="" id="registerbutton"> 
+						</p>
     				</form>  
     			</div> 
 				
@@ -66,5 +68,7 @@
 				About us
 		</div>
     		</div>
+                     
     </body>
+
 </html>
