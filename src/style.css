@@ -1,14 +1,7 @@
-header{
-	margin: 0 auto 0 auto;
-	width: 1024px;
-	background-color: white;
-}
-
 body{
 	margin: 0 auto 0 auto;
-	width: 1024px;
+	width: 900px;
 	font-family: calibri;
-	background: url(images/Background.jpg);
 }
 
 h1{
@@ -16,9 +9,14 @@ h1{
 	margin: 0px;
 }
 
+h3{	
+	color:#8A0829;
+}
+
 label{
 	display: inline-block;
 	width: 200px;
+	height: 30px;
 }
 
 a {
@@ -41,8 +39,7 @@ a {
 
 
 .body {
-	float: left;
-	width: 100%;
+	width: 900px;
 }
 
 .contents{
@@ -53,40 +50,101 @@ a {
 
 .catagories {
 	float: left;
-	width: 158px;
-	border-right: dashed 2px;
+	width: 170px;
 	padding: 10px;
 }
 
-#logo { 
-   background: url(images/Logo.png) no-repeat;
+header { 
    height : 84px;
-   width : 341px;
-   margin : 60px;
+   width : 900pxpx;
+   border-bottom: dashed 2px #CEF6CE;
+   padding-top: 5px;
+   padding-bottom: 5px;
 }
 
-#footer{
-	background : url(images/Bottom.jpg);
-	margin :0 px 600px;
-	width : 1024px;
-	height : 35px;
+footer{
+	width : 900px;
 	text-align: center;
-}
-
-p {
-	margin-left: 500px;
+	border-top: dashed 2px #F5D0A9;
+	clear: both;
+	padding:10px;
 }
 
 #loginbutton {
-	background : url(images/LoginBottomClick.jpg);	
-	width : 67px;
-	height : 21px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #1570cd;
+}#loginbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color:#1e62d0;
+}#loginbutton:active {
+	position:relative;
+	top:1px;
 }
 
 #registerbutton{
-	background : url(images/SignUpBottom.png);	
-	width : 67px;
-	height : 21px;
+	
+	-moz-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fc8d83), color-stop(1, #e4685d) );
+	background:-moz-linear-gradient( center top, #fc8d83 5%, #e4685d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc8d83', endColorstr='#e4685d');
+	background-color:#fc8d83;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;
 }
-	
-	
+#registerbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e4685d), color-stop(1, #fc8d83) );
+	background:-moz-linear-gradient( center top, #e4685d 5%, #fc8d83 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4685d', endColorstr='#fc8d83');
+	background-color:#e4685d;
+}
+#registerbutton:active {
+	position:relative;
+	top:1px;
+}
+
+#loginform {
+	width:400px;
+	float: left;
+	padding: 10px;
+}
+
+.registerform {
+	width:400px;
+	float: left;
+	padding: 10px;
+}
+
+input{
+	border-radius: 5px;
+}
