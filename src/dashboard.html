@@ -21,25 +21,62 @@ and open the template in the editor.
                 </form>
 
         </div>
-        <div class="body">
+        <div class="bodyla">
             <div class="catagories">
                 <h3>Catagories:</h3>
                 <ul>
-                    <li><a href="#">School</a></li>
-                    <li><a href ="#">Personal</a></li>
-                    <li><a href ="#">Club</a></li>
+                    <li><a href="#" onclick="showDapur()">Dapur</a></li>
+                    <li><a href ="#" onclick="showSekolah()">Sekolah</a></li>
+                    <li><a href ="#" onclick="showPersonal()">Personal</a></li>
+                    <li><a href ="#" onclick="showPenting()">Penting</a></li>
                 </ul>
+                <input type="submit" value="Add Catagory" onclick="fitur()">
             </div>
             <div class="contents">
                 <h3>Your Pending Tasks:</h3>
+                <div id="alltask">
                 <ul>
-                    <li><a href="rinciantugas5.html">Beli Nasi Timbel</a>, 15 Maret 2013. Tags: dapur, makanan, penting</li>
-                    <li><a href="rinciantugas2.html">Beli Ayam Broiler</a>, 15 Maret 2013. Tags: dapur, makanan, penting</li>
-                    <li><a href ="#">Task3</a>, 17 Maret 2013. Tags: dapur, makanan, penting</li>
+                    <li><a href="rinciantugas5.html">Beli Nasi Timbel</a>, 15 Maret 2013. Tags: dapur, penting</li>
+                    <li><a href="rinciantugas2.html">Beli Ayam Broiler</a>, 15 Maret 2013. Tags: dapur</li>
+                    <li><a href ="#">Bersihkan dapur</a>, 17 Maret 2013. Tags: dapur</li>
+                    <li><a href="#">Buat PR</a>, 15 Maret 2013. Tags: sekolah</li>
+                    <li><a href="#">Tes Formatif II</a>, 19 Maret 2013. Tags: sekolah, penting</li>
+                    <li><a href ="#">Beli sabun</a>, 17 Maret 2013. Tags: personal</li>
                 </ul>
+                <br><br>
+                </div>
+                <div id="dapurtask">
+                <ul>
+                    <li><a href="rinciantugas5.html">Beli Nasi Timbel</a>, 15 Maret 2013. Tags: dapur, penting</li>
+                    <li><a href="rinciantugas2.html">Beli Ayam Broiler</a>, 15 Maret 2013. Tags: dapur</li>
+                    <li><a href ="#">Bersihkan dapur</a>, 17 Maret 2013. Tags: dapur</li>
+                </ul>
+                <input type="submit" value="Add New Task" id="addnewtask" onclick="addTask()">
+                </div>
+                <div id="sekolahtask">
+                <ul>
+                    <li><a href="#">Buat PR</a>, 15 Maret 2013. Tags: sekolah</li>
+                    <li><a href="#">Tes Formatif II</a>, 19 Maret 2013. Tags: sekolah, penting</li>
+                </ul>
+                <input type="submit" value="Add New Task" id="addnewtask" onclick="addTask()">
+                </div>
+                <div id="personaltask">
+                <ul>
+                    <li><a href ="#">Beli sabun</a>, 17 Maret 2013. Tags: personal</li>
+                </ul>
+                <input type="submit" value="Add New Task" id="addnewtask" onclick="addTask()">
+                </div>                
+                <div id="pentingtask">
+                <ul>
+                    <li><a href="rinciantugas5.html">Beli Nasi Timbel</a>, 15 Maret 2013. Tags: dapur, penting</li>
+                    <li><a href="#">Tes Formatif II</a>, 19 Maret 2013. Tags: sekolah, penting</li>
+                </ul>
+                <input type="submit" value="Add New Task" id="addnewtask" onclick="addTask()">
+                </div>
+
             </div>
-        <input type="submit" value="Add Catagory" onclick="fitur()">
-        <input type="submit" value="Add New Task" onclick="addTask()">
+        
+        
         </div>
         <footer>
             CanDo. Yes you can!
