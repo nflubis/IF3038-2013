@@ -8,16 +8,16 @@ and open the template in the editor.
         <title>Create New Task -- CanDo</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="rinciantugas.js"></script>
     </head>
     <body>
         <div class ="header" id="headerother">
                 <img src="images/Logo.png" class="logosmall">
                 <input type="text" name="search" class="sfield" value="" align = "right">
-                <a href="dashboard.html">Dashboard</a>
-                <a href="halamanProfil.html">Profile</a>
+                <a href="dashboard.html">Dashboard</a> | 
+                <a href="halamanProfil.html">Profile</a> | 
                 <a href="index.html">Logout</a>
                 </form>
-
         </div>
         <div class="body">
             <div class="contents">
@@ -25,7 +25,9 @@ and open the template in the editor.
                 <div class="namatugas">Beli Minyak Goreng</div>
                 <br>
                 <div class="atributtugas">Deadline</div>
+                <p>15 Maret 2013</p>
                 <br>
+
                 <div> <div class="atributtugas">Assignee</div>
                     <ul>
                         <li>Assignee 1</li>
@@ -50,7 +52,7 @@ and open the template in the editor.
                 <img src ="images\tes.jpg">
                 <!-- to do: kalo ada file pop-up/download sesuai MIME -->
                 <br><br><br>
-                <input type="submit" value="Edit Task">
+                <input type="submit" value="Edit Task" onclick="editTask()">
                 <!-- to do: kalo button diklik bbrp field jadi editable -->
             </div>
             <nav class="categories">

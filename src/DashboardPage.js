@@ -17,3 +17,7 @@ function tutup() {
 	alert("kategori dibuat namun belum disimpan");
 	window.close();
 }
+
+function addTask(){
+	window.location='buattugas.html';
+}
