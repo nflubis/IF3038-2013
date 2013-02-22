@@ -8,6 +8,7 @@ and open the template in the editor.
         <title>Create New Task -- CanDo</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript" src="buattugas.js"></script>
     </head>
     <body>
         <div class ="header" id="headerother">
@@ -20,7 +21,7 @@ and open the template in the editor.
                 <h3>Create New Task</h3>
                 <label>Task Title </label>
                 <!-- to do: hanya huruf dan angka, dan max25 karakter -->
-                <input type="text" name="nama tugas" placeholder="max 25 chars">
+                <input type="text" id="namatugas">
                 <br>
                 <label>Attachments </label>
                 <input type="file">
@@ -36,8 +37,8 @@ and open the template in the editor.
                 <!-- to do: multiple input, dipisah dengan koma -->
                 <input type="text">
                 <br>
-                <input type = "submit" value = "Create Task">
-                <input type = "submit" value = "Cancel">
+                <input type = "submit" value = "Create Task"    onclick="validateForm()">
+                <input type = "submit" value = "Cancel" onclick="cancel()">
             </div>
         </div>
         <footer>
