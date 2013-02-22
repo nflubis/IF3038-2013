@@ -5,7 +5,7 @@ function validation (form) {
  	var user = form.usermail.value;
  	var pass = form.password.value;
  	if ((user == "nunu@syafira.dimas") && (pass == "admin")) {
- 		window.location.href = "DashboardPage.html";
+ 		window.location.href = "dashboard.html";
  		alert("."); // Ini jangan diapus, kalau dihapus jadi nggak ngeload ke page baru
  	}
  	else {
