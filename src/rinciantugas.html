@@ -25,17 +25,18 @@ and open the template in the editor.
                 <div class="namatugas">Beli Minyak Goreng</div>
                 <br>
                 <div class="atributtugas">Deadline</div>
-                <p>15 Maret 2013</p>
+                <div id="atributdeadline">15 Maret 2013</div>
                 <br>
 
                 <div> <div class="atributtugas">Assignee</div>
+                    <div id="atributassignee">
                     <ul>
                         <li>Assignee 1</li>
                         <li>Assignee 2</li>
                         <li>Assignee n</li>
                     </ul>
                 </div>
-                <div><div class="atributtugas">Tags</div> dapur, makanan, penting</div>
+                <div><div class="atributtugas">Tags</div> <div id="atributtag">dapur, makanan, penting</div></div>
                 <br>
                 <div class="atributtugas">Comments</div>
                 <p class="commenttugas">Wah seru banget nih tugasnya! huhuhu ngiri sama assigneenya</p>
@@ -52,17 +53,9 @@ and open the template in the editor.
                 <img src ="images\tes.jpg">
                 <!-- to do: kalo ada file pop-up/download sesuai MIME -->
                 <br><br><br>
-                <input type="submit" value="Edit Task" onclick="editTask()">
+                <input type="submit" id="edittaskbutton" value="Edit Task" onclick="editTask()">
                 <!-- to do: kalo button diklik bbrp field jadi editable -->
             </div>
-            <nav class="categories">
-                <h3>Catagories:</h3>
-                <ul>
-                    <li><a href="#" onclick="showDapur()">Dapur</a></li>
-                    <li><a href ="#" onclick="showSekolah()">Sekolah</a></li>
-                    <li><a href ="#" onclick="showPersonal">Personal</a></li>
-                </ul>
-            </nav>
         </div>
         <footer>
             CanDo. Yes you can!
