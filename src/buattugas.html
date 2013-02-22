@@ -11,17 +11,20 @@ and open the template in the editor.
         <script type="text/javascript" src="buattugas.js"></script>
     </head>
     <body>
-        <div class ="header" id="headerother">
+        <header id="headerother">
     			<img src="images/Logo.png" class="logosmall">
 				<input type="text" name="search" class="sfield" value="" align = "right">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="halamanProfil.html">Profile</a>
+                <a href="index.html">Logout</a>
 
-		</div>	
+		</header>	
         <div class="body">
             <div class="contents">
                 <h3>Create New Task</h3>
                 <label>Task Title </label>
                 <!-- to do: hanya huruf dan angka, dan max25 karakter -->
-                <input type="text" id="namatugas">
+                <input type="text" id="namatugas" required>
                 <br>
                 <label>Attachments </label>
                 <input type="file">

@@ -2,8 +2,7 @@ body{
 	margin: 0 auto 0 auto;
 	width: 900px;
 	font-family: calibri;
-	background-image : url(images/Background.jpg);
-	background-position: center;
+	
 }
 
 h1{
@@ -53,7 +52,7 @@ a {
 
 .catagories {
 	float: left;
-	width: 170px;
+	width: 160px;
 	padding: 10px;
 }
 
