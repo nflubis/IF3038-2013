@@ -14,46 +14,18 @@ function validate(){
 
 
 function regsukses() {
-	alert("Registrasi Berhasil. Namun mohon maaf situs belum mampu menyimpan data anda");
-} 
-
- function formValidation(form)
-{
-	var passid = form.password.value;
-	var conf = form.confpassword.value;
-	var uname = form.nama.value;
-	var uemail = form.usermail.value;
-	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-	var letters = /^[A-Za-z]+$/;
+	var name = form.nama.value;
+	var pass = form.password.value;
 	
-	 if((uemail.value.match(mailformat)))
-		{
-			if(passid_len != 0)
-				{
-					if((passid == conf ))
-						{
-							if((uname.value.match(letters)))
-								{
-		 							alert('Form Succesfully Submitted');
-								}
-							else {
-									alert ("salah");
-								}
-							}
-						else {
-									alert ("salah");
-							}
-						}
-						else {
-									alert ("salah");
-							} 
-				}
-		 
-								
+	if ((name == pass)){
+		alert("kesalahan pengisian");
+	}
+	
 	else {
-		alert ("salah");
+	alert("Registrasi Berhasil. Namun mohon maaf situs belum mampu menyimpan data anda");
 	}
 } 
+
 
 /*
 	function passid_validation()
