@@ -9,5 +9,5 @@ function validateForm(){
 }
 
 function cancel() {
-	window.location='dashboard.html'
+	window.location=rinciantugas.html;
 }
