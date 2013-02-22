@@ -10,6 +10,9 @@ and open the template in the editor.
         <title>Task Details -- CanDo</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
+    
+    	<script src="rinciantugas.js"></script>
+    
     <body>
         <div class ="header" id="headerother">
                 <img src="images/Logo.png" class="logosmall">
@@ -48,7 +51,16 @@ and open the template in the editor.
                 <br>
                 <div class="atributtugas">Attachments</div>
                 <!-- Di sini taro attchmentnya -->
-                <img src ="images\tes.jpg">
+                
+               <div id="previewcanvascontainer">
+    <canvas id="previewcanvas">
+    </canvas>
+</div>
+
+<form action="/uploadfile.php" enctype="multipart/form-data" method="post">
+    <input type="file" onchange="return ShowImagePreview( this.files );" />
+</form>
+                
                 <!-- to do: kalo ada file pop-up/download sesuai MIME -->
                 <br><br><br>
                 <input type="submit" value="Edit Task">

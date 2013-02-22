@@ -10,6 +10,8 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <script type="text/javascript" src="rinciantugas.js"></script>
     </head>
+    <script src="rinciantugas.js"></script>
+
     <body>
         <div class ="header" id="headerother">
                 <img src="images/Logo.png" class="logosmall">
@@ -50,6 +52,15 @@ and open the template in the editor.
                 <br>
                 <div class="atributtugas">Attachments</div>
                 <!-- Di sini taro attchmentnya -->
+                 <div id="previewcanvascontainer">
+    <canvas id="previewcanvas">
+    </canvas>
+</div>
+
+<form action="/uploadfile.php" enctype="multipart/form-data" method="post">
+    <input type="file" onchange="return ShowImagePreview( this.files );" />
+</form>
+
                 <img src ="images\tes.jpg">
                 <!-- to do: kalo ada file pop-up/download sesuai MIME -->
                 <br><br><br>
