@@ -1,18 +1,16 @@
 /**
  * @author Dimas
  */
-function validation (form) {
- 	var user = form.usermail.value;
- 	var pass = form.password.value;
- 	if ((user == "nunu@syafira.dimas") && (pass == "admin")) {
- 		window.location.href = "dashboard.html";
- 		alert("."); // Ini jangan diapus, kalau dihapus jadi nggak ngeload ke page baru
- 	}
- 	else {
- 			
- 		alert("ID tidak terdaftar");
- 	}
- }
+function validate(){
+	var email = document.getElementById("usermail").value;
+	var pass = document.getElementById("password").value;
+	if ((pass=="admin") && (email=="nunu@syafira.dimas")){
+		window.location='dashboard.html';	
+	} else {
+		alert("ID tidak terdaftar!");
+	}
+	
+}
 
 
 function regsukses() {
